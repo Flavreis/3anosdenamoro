@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="booklet/jquery.booklet.1.1.0.css">
+    <title>3 anos de namoro</title>
+</head>
+
+<body>
+
+    <audio id="music" loop style="display: none;">
+        <source src="audio/Selena Gomez & The Scene - Naturally.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="play-pause-btn" class="play-pause-btn" onclick="toggleMusic()">
+        <img id="play-icon" src="icon/play.png" alt="Play" style="width: 30px; display: inline;">
+        <img id="pause-icon" src="icon/pause.png" alt="Pause" style="width: 30px; display: none;">
+    </button>
+
+    <div class="flipbook">
+        <div class="hard">
+            <img src="images/São Paulo/Capinha.png" alt="">
+        </div>
+        <div class="hard"><img src="images/Contracapa.png" alt=""></div>
+        <div>
+            <img src="images/São Paulo/São Paulo.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Castelo Rá-tim-bum.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Morgana.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Filme.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/VUC VUC.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Museu do Crime.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Procurada.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Tigrinho.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Compilado.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/agua.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Proibido.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Museu do crime/Carrinho.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Augusta/Augusta.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Tim Burton/Tim Burton.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Tim Burton/Filme do tintin.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Tim Burton/Gatinha.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Taverna/Taverna.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Taverna/Veronica bebada.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Harry Potter/Harry Potter.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Harry Potter/Compilado beco.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Bienal/Bienal.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Aquario.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Chico Mendes.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Suricato.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Rei Julien.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Australia.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Calanguinho.png" alt="">
+        </div>
+        <div>
+            <img src="images/São Paulo/Aquario/Amor.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/zooRJ/RJ.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/zooRJ/BioParque.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/zooRJ/Macaco eletricista.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/zooRJ/agua (2).png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/Paul/Paul McCartney.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/Paul/Hora do show.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/Paco/Paco Imperial.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/Paco/Pinterest.png" alt="">
+        </div>
+        <div>
+            <img src="images/Rio/jantar/Jatinha.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/Manaus.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/Fotos final do ano.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/formatura/Cenorita formando.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/bruxa/Restaurante estranho.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/CIGS/CIGS.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/CIGS/Bicharada.png" alt="">
+        </div>
+        <div>
+            <img src="images/Manaus/CIGS/Final das viagens.png" alt="">
+        </div>
+        <div class="hard"><img src="images/Capa final.png" alt=""></div>
+        <div class="hard"><img src="images/contracapa final.png" alt=""></div>
+    </div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/turn.js"></script>
+    <script>
+        $(".flipbook").turn();
+    </script>
+    <script>
+        const audio = document.getElementById('music');
+
+        audio.volume = 0.3;
+    </script>
+
+<script>
+    const music = document.getElementById('music');
+    const musicControl = document.getElementById('music-control');
+    let isPlaying = false;
+
+    function toggleMusic() {
+    const music = document.getElementById('music');
+    const playIcon = document.getElementById('play-icon');
+    const pauseIcon = document.getElementById('pause-icon');
+
+    if (music.paused) {
+        music.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+    } else {
+        music.pause();
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+    }
+}
+</script>
+</body>
+
+</html>
